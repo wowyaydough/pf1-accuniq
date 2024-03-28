@@ -1,0 +1,153 @@
+#title {
+  height: 100vh;
+  background-color: white;
+  max-width: 1720px;
+  margin: 0 auto;
+  border-radius: 0 0 30px 30px;
+  box-shadow: 0 10px 28px #ccc;
+  min-height: 800px;
+}
+
+#title::before{
+  content:"";
+  display: block;
+  width: 91%;
+  height: 101.5%;
+  position: absolute;
+  background-image: url(../img/accuniq.svg);
+  background-repeat: no-repeat;
+  background-position-x:center;
+  background-position-y: 99%;
+  background-size:contain; 
+  opacity: 0;
+  animation-delay: 2s;
+  animation-name: title; 
+  animation-duration: 1s; 
+  animation-direction: reverse;
+  animation-timing-function: ease-in; 
+  animation-fill-mode: forwards;
+}
+@keyframes title{
+  0%{
+    opacity:1;
+  }
+  100%{
+    transform:translatey(50%);
+  }
+  
+}
+#title .wrap {
+  height: 100%;
+}
+
+#title .wrap::after{
+  content:"";
+  background-image:url(../img/logo.svg);
+  background-repeat: no-repeat;
+  background-position-x:64%;
+  background-position-y: 51%;
+  background-size:32%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0; 
+  position: absolute;
+  animation-delay: 0.5s;
+  animation-name: bottom_to_top; 
+  animation-duration: 1s; 
+  animation-direction: reverse;
+  animation-timing-function: ease-in; 
+  animation-fill-mode: forwards;
+}
+@keyframes bottom_to_top{
+  0%{
+    opacity: 1;
+  }
+  100%{transform:translatey(10%);
+    
+  }
+}
+#title .wrap hgroup{
+  height: 100%;
+  padding-left: 150px; 
+}
+
+#title .wrap hgroup h2 {
+  font-weight: bold;
+  color: #69c7ec;
+  backface-visibility: hidden;
+  width: fit-content;
+  animation-name:btopt2;
+  animation-delay: 1.5s;
+  animation-duration: 1s; 
+  animation-direction: reverse;
+  animation-timing-function: ease-in; 
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+@keyframes btopt2{
+  0%{
+    opacity:1;
+  }
+  100%{
+    transform:translatey(100%);
+  }
+}
+#title .wrap hgroup h3 { 
+  font-weight: bold;
+  color: #333333;
+  line-height: 79px;
+  backface-visibility: hidden;
+  width: fit-content;
+  animation-name:btopt3;
+  animation-delay: 1.5s;
+  animation-duration: 1s; 
+  animation-direction: reverse;
+  animation-timing-function: ease-in; 
+  animation-fill-mode: forwards;
+  opacity:0;
+}
+@keyframes btopt3{
+  0%{
+    opacity:1;
+  }
+  100%{
+    transform:translatey(50%);
+  }
+}
+#title::after{
+  content: ""; 
+  background-image:url(../img/woman.png);
+  background-repeat: no-repeat;
+  background-size:95%; 
+  width: 674px;
+  height: 899px;
+  display: block;
+  position: absolute;
+  right: 155px;
+  bottom: -153px;
+  animation-delay: 1s;
+  animation-name: right_to_left; 
+  animation-duration: 1s; 
+  animation-direction: reverse;
+  animation-timing-function: ease-in; 
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+@keyframes right_to_left{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    transform:translatex(20%);
+  }
+}
+
+@keyframes titleT{
+  0{
+  opacity: 1;
+  }
+  100%{
+    transform:translatey(-40%); 
+  }
+}

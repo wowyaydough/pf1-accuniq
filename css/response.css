@@ -1,0 +1,314 @@
+@media screen and (max-width:768px){
+   .ham{
+  display: flex;
+  }
+  
+  .wrap{
+    width:768px;
+    padding:0 15px;
+    box-sizing: border-box;
+  }
+  
+/*  header  */
+  header div.wrap div.right{
+    
+  padding-right: 0px;
+  }
+  header div.wrap div.right > a.ham{
+  position: relative;
+  z-index: 3;
+  }
+  header div.wrap ul.gnb{
+  background-color: white;
+  flex-direction: column;
+  position: absolute;
+  right: 8px;
+  top: 0;
+  padding: 95px 0 0;
+  z-index: 2;
+  }
+  header div.wrap ul.gnb::before{
+    content:"";
+    width: 597px;
+    height: 1026px;
+    position: absolute;
+    left: -597px;
+    top: 0;
+    background-color: rgba(0,0,0,0.4);
+  }
+  header div.wrap ul.gnb li{
+  border-top: 1px solid #eee;
+  width: 152px;
+  padding: 0 26px;
+  }
+  header div.wrap ul.gnb li:last-child{
+    border-bottom: 1px solid #eee;
+  }
+  header div.wrap ul.gnb li a{
+  padding: 0;
+  line-height: 3;
+  display: flex;
+  justify-content: space-between;
+  }
+  header div.wrap ul.gnb li a::after{
+    content:"+";
+  }
+  
+/* title   */
+  #title .wrap{
+    
+  justify-content: unset;
+  }
+  #title .wrap::after{
+  background-size: 72%;
+  background-position-x: 64%;
+  background-position-y: 76%;
+  }
+  #title::after{
+    
+  padding-left: 0px;
+  right: -111px;
+  bottom: -178px;
+  background-size: 77%;
+  }
+  #title .wrap hgroup{
+  padding-left: 0px;
+  margin-top: 120px;
+  }
+  
+/*  products  */
+  section#product{
+    
+  background-color: rgba(0,0,0,0);
+  }
+  section#product .wrap{
+  flex-direction: column-reverse;
+  }
+  section#product .wrap .pdetail{
+    width:100%;
+    background-color: white;
+    border-radius: 30px;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  section#product .wrap .pdetail article{
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  }
+  section#product .wrap .pdetail article hgroup h3{
+    
+  font-size: 30px;
+  }
+  section#product .wrap .pdetail article hgroup h4{
+    
+  font-size: 80px;
+  }
+  section#product .wrap .pdetail article img{
+  grid-column: 1;
+  grid-row: 4;
+  justify-self: center;
+  }
+  section#product .wrap ul{
+    
+  width: 100%;
+  }
+  section#product .wrap ul li{
+  background-color: white;
+  border-radius: 30px;
+  width: 100%;
+  }
+  
+  /*  connect  */
+  section#connect{
+    max-width: unset;
+    height: unset;
+    padding: 30px;
+    border-radius: 30px;
+  }
+  section#connect::after{
+ 
+  left: -28px;
+  }
+  section#connect .wrap{
+    
+  grid-column: 1;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  justify-content: center;
+  }
+  section#connect .wrap p{
+    display: none;
+  }
+  section#connect .wrap h2{
+    
+  grid-column: 1;
+  text-align: center;
+  }
+  section#connect .wrap > span{
+    
+  grid-column: 1;
+  justify-self: center;
+  }
+  section#connect .wrap ul{
+    grid-column: 1;
+    grid-row: 6;
+    justify-self: center;
+  }
+  section#connect .wrap ul li:not(:first-child){
+    display: none;
+  }
+  section#connect .wrap ul li img{
+  border: 1px solid #eee;
+  border-radius: 30px;
+  box-shadow: 0px 0px 15px #eee;
+  }
+  
+/* dashboard   */
+  
+  section#dashboard{
+    max-width: initial;
+    height: unset;
+    padding: 30px;
+    border-radius: 30px;
+  }
+  section#dashboard::after{
+  left: -29px;
+  }
+  section#dashboard .wrap{
+  justify-content: center;
+  row-gap: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+  }
+  section#dashboard .wrap h2{
+  text-align: center;
+  font-size: 30px;
+  }
+  section#dashboard .wrap h2 strong{
+    font-size:80px;
+  }
+  
+  section#dashboard .wrap p{
+    display: none;
+  }
+  section#dashboard .wrap > span{
+  margin: auto;
+  }
+  section#dashboard .wrap ul{
+    
+  margin: auto;
+  }
+  section#dashboard .wrap ul li{
+    
+  border: 1px solid #eee;
+  border-radius: 30px;
+  box-shadow: 1px 1px 17px #eee;
+  }
+  section#dashboard .wrap ul li:last-child{
+    display: none;
+  }
+  section#dashboard .wrap ul li img{
+  border: 1px solid #eee;
+  border-radius: 30px;
+  box-shadow: 0px 0px 15px #eee;
+  }
+  
+/*  product2  */
+  section#product2{
+   background-color:rgba(0,0,0,0);
+  }
+  section#product2 .wrap{
+  flex-direction: column-reverse;
+  }
+  section#product2 .wrap .pdetail{
+  width: 100%;
+  background-color: white;
+  border-radius: 30px;
+  padding: 30px;
+  box-sizing: border-box;
+  }
+  section#product2 .wrap .pdetail article{
+  display: flex;
+  flex-direction: column;
+  margin-left: 115px;
+  }
+  section#product2 .wrap .pdetail article img{
+  margin-left: 27px;
+  }
+  section#product2 .wrap ul{
+    
+  width: 100%;
+  }
+  section#product2 .wrap ul li{
+  width: 100%;
+  background-color: white;
+  border-radius: 30px;
+  }
+  section#product2 .wrap ul li a::after{
+  margin-right: 150px;
+  }
+/*  banner  */
+  section#banner .wrap ul{
+    
+  }
+  section#banner .wrap ul li{
+  width: calc((100% - 245px) / 2);
+  margin: auto;
+  }
+  section#banner .wrap ul li a{
+  margin-left: 27px;
+  }
+/* footer   */
+  footer{
+    padding:0 !important;
+  }
+  footer section#ftop{
+    padding:0;
+  }
+  footer section#ftop .wrap > ul{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  padding: 30px;
+  }
+  footer section#ftop .wrap > ul > li{
+    
+  }
+  footer section#ftop .wrap > ul > li > ul{
+    display: none;
+  }
+  footer section#ftop .wrap > ul > li > ul > li h4 a{
+    display: none;
+  }
+  footer section#ftop .wrap > ul > li > ul > li ul{
+    display: none;
+  }
+  footer section#fbottom .wrap{
+    
+  flex-direction: column;
+  }
+  footer section#fbottom .wrap ul{
+    
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 51px;
+  flex-direction: column;
+  }
+  footer section#fbottom .wrap ul li h3{
+  font-size: 15px;
+  font-weight: bold;
+  }
+  footer section#fbottom .wrap:nth-child(2){
+  flex-direction: column-reverse;
+  }
+  footer section#fbottom .wrap:nth-child(2) p{
+  padding: 32px 0;
+  font-size: 14px;
+  }
+  footer section#fbottom .wrap:nth-child(2) a{
+    
+  padding-top: 41px;
+  font-size: 15px;
+  }
+}
