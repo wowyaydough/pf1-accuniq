@@ -1,8 +1,0 @@
-@media screen and (max-width:768px){
-   .ham{
-  display: flex;
-  }
-  header div.wrap div.right > a.ham{
-    display: none;
-  }
-}
